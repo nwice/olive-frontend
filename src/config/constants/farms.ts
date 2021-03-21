@@ -4,12 +4,12 @@ import { FarmConfig, QuoteToken } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 1,
-    lpSymbol: 'BLZD-BUSD LP',
+    lpSymbol: 'OLIVE-BUSD LP',
     lpAddresses: {
       97: '',
       56: '0xE9C53B5Ab0C9cDBd72A03151a628863C28c55A6A',
     },
-    tokenSymbol: 'BLZD',
+    tokenSymbol: 'OLIVE',
     tokenAddresses: {
       97: '',
       56: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
@@ -19,15 +19,15 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 2,
-    lpSymbol: 'BLZD-BNB LP',
+    lpSymbol: 'OLIVE-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x27A5a5c1fF96447F2a0c4baDcF26E7c65C040E3C',
+      56: '0xf275f810b1c0cdd9992d1b744a4f8b95939dd13a',
     },
-    tokenSymbol: 'BLZD',
+    tokenSymbol: 'OLIVE',
     tokenAddresses: {
       97: '',
-      56: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
+      56: '0xf5baa7e74ef1180c05df603051d41a341eaa82cf',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,

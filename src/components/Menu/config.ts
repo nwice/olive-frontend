@@ -32,11 +32,6 @@ const config: MenuEntry[] = [
     icon: 'CaveIcon',
     href: '/caves',
   },
-  // {
-  //   label: 'Blizzard',
-  //   icon: 'PoolIcon',
-  //   href: '/pools',
-  // },
   {
     label: 'Info',
     icon: 'InfoIcon',
@@ -54,7 +49,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/olive-finance",
+        href: "https://github.com/olive-cash",
         external: true
       },
       {
