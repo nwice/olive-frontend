@@ -72,8 +72,8 @@ const FarmedStakingCard = () => {
           params: {
             type: 'ERC20',
             options: {
-              address: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
-              symbol: 'BLZD',
+              address: '0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3',
+              symbol: 'Olive',
               decimals: '18',
               image: 'https://blzd-frontend.vercel.app/images/farms/blzd.png',
             },
