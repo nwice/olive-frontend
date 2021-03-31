@@ -72,11 +72,11 @@ const Farm: React.FC = () => {
           {TranslateString(282, 'Olive Coming Soon...')}
         </Heading>
         {/* <ul>
-            <li>{TranslateString(580, 'Stake BLZD to earn tokens.')}</li>
+            <li>{TranslateString(580, 'Stake OLIVE to earn tokens.')}</li>
             <li>{TranslateString(404, 'You can unstake at any time.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul> */}
-        <img src="/images/blzdstakepage.png" alt="BLZD Pool icon" width={410} height={191} />
+        <img src="/images/blzdstakepage.png" alt="OLIVE Pool icon" width={410} height={191} />
       </Hero>
       {false && (
         <>

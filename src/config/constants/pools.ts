@@ -3,8 +3,8 @@ import { PoolConfig } from './types'
 const pools: PoolConfig[] = [
   // {
   //   sousId: 0,
-  //   tokenName: 'BLZD',
-  //   stakingTokenName: QuoteToken.BLZD,
+  //   tokenName: 'OLIVE',
+  //   stakingTokenName: QuoteToken.OLIVE,
   //   stakingTokenAddress: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
   //   contractAddress: {
   //     97: '',

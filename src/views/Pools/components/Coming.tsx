@@ -64,7 +64,7 @@ const Coming: React.FC = () => {
             </span>
             {TranslateString(384, 'Your Stake')}:
           </div>
-          <Value>??? BLZD</Value>
+          <Value>??? OLIVE</Value>
         </DetailPlaceholder>
       </div>
       <Footer>

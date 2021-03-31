@@ -96,24 +96,24 @@ const FarmedStakingCard = () => {
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
         <TokenImageWrapper>
-          <CardImage src="/images/blzd/2.png" alt="blzd logo" width={64} height={64} />
+          <CardImage src="/images/blzd/2.png" alt="OLIVE logo" width={64} height={64} />
           <Button onClick={addWatchBlzdToken} scale="sm">
             + <img style={{ marginLeft: 8 }} width={16} src="/images/wallet/metamask.png" alt="metamask logo" />
           </Button>
         </TokenImageWrapper>
         <Block>
           <BlzdHarvestBalance />
-          <Label>{TranslateString(544, 'BLZD to Harvest')}</Label>
+          <Label>{TranslateString(544, 'OLIVE to Harvest')}</Label>
         </Block>
         <Block>
           <BlzdWalletBalance />
-          <Label>{TranslateString(546, 'BLZD in Wallet')}</Label>
+          <Label>{TranslateString(546, 'OLIVE in Wallet')}</Label>
         </Block>
         <Actions>
           {account ? (
             <Button id="harvest-all" disabled={balancesWithValue.length <= 0 || pendingTx} onClick={harvestAllFarms}>
               {pendingTx
-                ? TranslateString(548, 'Collecting BLZD')
+                ? TranslateString(548, 'Collecting OLIVE')
                 : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (
