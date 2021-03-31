@@ -1202,18 +1202,6 @@
     },
     {
       "data": {
-        "stringId": 729,
-        "text": "Olive.Cash will start in"
-      }
-    },
-    {
-      "data": {
-        "stringId": 730,
-        "text": "Thu Apr 01 2021 12:00:00 GMT+0000"
-      }
-    },
-    {
-      "data": {
         "stringId": 10000,
         "text": "Deposit Fee will be used to buyback OLIVE"
       }
