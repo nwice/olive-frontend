@@ -56,7 +56,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'OLIVE',
     lpAddresses: {
       97: '',
-      56: '0xE9C53B5Ab0C9cDBd72A03151a628863C28c55A6A', // OLIVE-BUSD LP
+      56: '0x278d8951773b4de764ec2a976c6513f9463d3092', // OLIVE-BUSD LP
     },
     tokenSymbol: 'OLIVE',
     tokenAddresses: {
