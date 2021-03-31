@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Heading, Text } from '@blzd-dev/uikit'
+import { Card, CardBody, Heading, Text } from '@olive-dev/uikit'
 import BigNumber from 'bignumber.js/bignumber'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'

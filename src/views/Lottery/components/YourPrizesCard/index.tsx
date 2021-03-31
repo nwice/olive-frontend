@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody } from '@blzd-dev/uikit'
+import { Card, CardBody } from '@olive-dev/uikit'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalClaim } from 'hooks/useTickets'
 import PrizesWonContent from './PrizesWonContent'

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BaseLayout } from '@blzd-dev/uikit'
+import { BaseLayout } from '@olive-dev/uikit'
 import PastLotteryRoundViewer from './components/PastLotteryRoundViewer'
 import PastDrawsHistoryCard from './components/PastDrawsHistory/PastDrawsHistoryCard'
 

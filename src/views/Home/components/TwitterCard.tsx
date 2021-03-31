@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Heading } from '@blzd-dev/uikit'
+import { Card, CardBody, Heading } from '@olive-dev/uikit'
 import styled from 'styled-components'
 import { Timeline } from 'react-twitter-widgets'
 import useI18n from 'hooks/useI18n'

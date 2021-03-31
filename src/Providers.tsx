@@ -1,5 +1,5 @@
 import React from 'react'
-import { ModalProvider } from '@blzd-dev/uikit'
+import { ModalProvider } from '@olive-dev/uikit'
 // import bsc, { UseWalletProvider } from '@binance-chain/bsc-use-wallet'
 import * as bsc from '@binance-chain/bsc-use-wallet'
 import { Provider } from 'react-redux'

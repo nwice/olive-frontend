@@ -1,7 +1,7 @@
 import React, { useEffect, Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { ResetCSS } from '@blzd-dev/uikit'
+import { ResetCSS } from '@olive-dev/uikit'
 import BigNumber from 'bignumber.js'
 import { useFetchPublicData } from 'state/hooks'
 import GlobalStyle from './style/Global'
@@ -52,23 +52,6 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Farms tokenMode/>
             </Route>
-            {/* <Route path="/lottery"> */}
-            {/*  <Lottery /> */}
-            {/* </Route> */}
-            {/* <Route path="/ifo"> */}
-            {/*  <Ifos /> */}
-            {/* </Route> */}
-            {/* <Route path="/nft"> */}
-            {/*  <Nft /> */}
-            {/* </Route> */}
-            {/* Redirect */}
-            {/* <Route path="/staking"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* <Route path="/syrup"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* 404 */}
             <Route component={NotFound} />
           </Switch>
         </Suspense>

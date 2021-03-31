@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Progress } from '@blzd-dev/uikit'
+import { Text, Progress } from '@olive-dev/uikit'
 import useI18n from 'hooks/useI18n'
 import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
 import { useCurrentTime } from 'hooks/useTimer'

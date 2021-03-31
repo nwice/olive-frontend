@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Heading, Link, Image } from '@blzd-dev/uikit'
+import { Text, Heading, Link, Image } from '@olive-dev/uikit'
 import useI18n from 'hooks/useI18n'
 
 const LayoutWrapper = styled.div`

@@ -3,7 +3,7 @@ import { Route, useRouteMatch } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { Heading } from '@blzd-dev/uikit'
+import { Heading } from '@olive-dev/uikit'
 import { BLOCKS_PER_YEAR } from 'config'
 import orderBy from 'lodash/orderBy'
 import partition from 'lodash/partition'
@@ -69,7 +69,7 @@ const Farm: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xxl" mb="16px">
-          {TranslateString(282, 'Blizzard Coming Soon...')}
+          {TranslateString(282, 'Olive Coming Soon...')}
         </Heading>
         {/* <ul>
             <li>{TranslateString(580, 'Stake BLZD to earn tokens.')}</li>

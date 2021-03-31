@@ -1,7 +1,7 @@
 import React from 'react'
 import useI18n from 'hooks/useI18n'
 import styled from 'styled-components'
-import { Text, Flex, Link, LinkExternal } from '@blzd-dev/uikit'
+import { Text, Flex, Link, LinkExternal } from '@olive-dev/uikit'
 import getLiquidityUrlPathParts from 'utils/getLiquidityUrlPathParts'
 import { Address } from 'config/constants/types'
 
