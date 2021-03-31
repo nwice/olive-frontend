@@ -93,7 +93,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           TranslateString(320, 'Stake LP tokens to earn OLIVE')
         }
       </Heading>
-      <FarmTabButtons />
       <div>
         <Divider />
         <FlexLayout>
