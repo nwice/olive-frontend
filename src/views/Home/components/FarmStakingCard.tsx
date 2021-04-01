@@ -72,7 +72,7 @@ const FarmedStakingCard = () => {
           params: {
             type: 'ERC20',
             options: {
-              address: '0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3',
+              address: '0x617724974218A18769020A70162165A539c07E8a',
               symbol: 'Olive',
               decimals: '18',
               image: 'https://olive.cash/images/farms/olive.png',

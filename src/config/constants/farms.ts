@@ -7,12 +7,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'OLIVE-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x278d8951773b4de764ec2a976c6513f9463d3092',
+      56: '0xb23bE2398f3397A6e0F014cCe5DA25975de1c197',
     },
     tokenSymbol: 'OLIVE',
     tokenAddresses: {
       97: '',
-      56: '0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3',
+      56: '0x617724974218A18769020A70162165A539c07E8a',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -22,12 +22,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'OLIVE-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xc8b84089c11927cee32eaafd6e32401b54c1e4d0',
+      56: '0x8E9A1C74f8b194933f1B520CE58Eb3405ea68008',
     },
     tokenSymbol: 'OLIVE',
     tokenAddresses: {
       97: '',
-      56: '0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3',
+      56: '0x617724974218A18769020A70162165A539c07E8a',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -55,12 +55,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'OLIVE',
     lpAddresses: {
       97: '',
-      56: '0x278d8951773b4de764ec2a976c6513f9463d3092', // OLIVE-BUSD LP
+      56: '0xb23bE2398f3397A6e0F014cCe5DA25975de1c197', // OLIVE-BUSD LP
     },
     tokenSymbol: 'OLIVE',
     tokenAddresses: {
       97: '',
-      56: '0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3',
+      56: '0x617724974218A18769020A70162165A539c07E8a',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
