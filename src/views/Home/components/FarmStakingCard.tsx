@@ -75,7 +75,7 @@ const FarmedStakingCard = () => {
               address: '0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3',
               symbol: 'Olive',
               decimals: '18',
-              image: 'https://blzd-frontend.vercel.app/images/farms/blzd.png',
+              image: 'https://olive.cash/images/farms/olive.png',
             },
           },
         })

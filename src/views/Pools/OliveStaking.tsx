@@ -76,7 +76,6 @@ const Farm: React.FC = () => {
             <li>{TranslateString(404, 'You can unstake at any time.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul> */}
-        <img src="/images/blzdstakepage.png" alt="OLIVE Pool icon" width={410} height={191} />
       </Hero>
       {false && (
         <>
