@@ -82,7 +82,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 6,
+    pid: 5,
     isTokenOnly: true,
     lpSymbol: 'BTCB',
     lpAddresses: {
@@ -98,7 +98,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 7,
+    pid: 6,
     isTokenOnly: true,
     lpSymbol: 'ETH',
     lpAddresses: {
@@ -114,7 +114,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 8,
+    pid: 7,
     isTokenOnly: true,
     lpSymbol: 'BIFI',
     lpAddresses: {
@@ -130,7 +130,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 9,
+    pid: 8,
     isTokenOnly: true,
     lpSymbol: 'CAKE',
     lpAddresses: {
