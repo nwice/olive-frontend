@@ -3,7 +3,7 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { allLanguages } from 'config/localisation/languageCodes'
 import { LanguageContext } from 'contexts/Localisation/languageContext'
 import useTheme from 'hooks/useTheme'
-import { usePriceBlzdBusd } from 'state/hooks'
+import { usePriceOliveBusd } from 'state/hooks'
 import { Menu as UikitMenu } from '@olive-dev/uikit'
 import config from './config'
 
@@ -11,7 +11,7 @@ const Menu = (props) => {
   const { account, connect, reset } = useWallet()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const blzdPriceUsd = usePriceBlzdBusd()
+  const olivePriceUsd = usePriceOliveBusd()
 
   return (
     <UikitMenu
@@ -23,7 +23,7 @@ const Menu = (props) => {
       currentLang={selectedLanguage && selectedLanguage.code}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      cakePriceUsd={blzdPriceUsd.toNumber()}
+      cakePriceUsd={olivePriceUsd.toNumber()}
       links={config}
       priceLink="https://pancakeswap.info/token/0x72274dfaa72ef6a466d9586c5f911d50e5ce98c3"
       {...props}

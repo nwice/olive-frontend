@@ -32,7 +32,7 @@ const PageLoader: React.FC = () => {
   return (
     <Wrapper>
       <LogoIcon>
-        <img style={{ height: 86 }} src="/images/blzd/logo.png" alt="logo" />
+        <img style={{ height: 86 }} src="/images/olive/logo.png" alt="logo" />
       </LogoIcon>
     </Wrapper>
   )

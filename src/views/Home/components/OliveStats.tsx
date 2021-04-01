@@ -7,9 +7,9 @@ import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
 import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
+import { useFarms, usePriceOliveBusd } from '../../../state/hooks'
 
-const StyledBlzdStats = styled(Card)`
+const StyledOliveStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
@@ -22,12 +22,12 @@ const Row = styled.div`
   margin-bottom: 8px;
 `
 
-const BlzdStats = () => {
+const OliveStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms();
-  const eggPrice = usePriceBlzdBusd();
+  const eggPrice = usePriceOliveBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = eggPrice.times(circSupply);
@@ -38,7 +38,7 @@ const BlzdStats = () => {
   }
 
   return (
-    <StyledBlzdStats>
+    <StyledOliveStats>
       <CardBody>
         <Heading size="xl" mb="24px">
           {TranslateString(534, 'OLIVE Stats')}
@@ -60,8 +60,8 @@ const BlzdStats = () => {
           <Text bold fontSize="14px">{olivePerBlock}</Text>
         </Row>
       </CardBody>
-    </StyledBlzdStats>
+    </StyledOliveStats>
   )
 }
 
-export default BlzdStats
+export default OliveStats

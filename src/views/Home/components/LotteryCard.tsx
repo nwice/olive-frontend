@@ -9,7 +9,7 @@ import useTokenBalance from 'hooks/useTokenBalance'
 import { useMultiClaimLottery } from 'hooks/useBuyLottery'
 import { useTotalClaim } from 'hooks/useTickets'
 import BuyModal from 'views/Lottery/components/TicketCard/BuyTicketModal'
-import BlzdWinnings from './BlzdWinnings'
+import OliveWinnings from './OliveWinnings'
 import LotteryJackpot from './LotteryJackpot'
 
 const StyledLotteryCard = styled(Card)`
@@ -71,7 +71,7 @@ const FarmedStakingCard = () => {
         </Heading>
         <CardImage src="/images/ticket.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <BlzdWinnings />
+          <OliveWinnings />
           <Label>{TranslateString(552, 'CAKE to Collect')}</Label>
         </Block>
         <Block>

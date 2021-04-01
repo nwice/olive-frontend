@@ -48,7 +48,6 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
 
-
   // single pools
   {
     pid: 0,

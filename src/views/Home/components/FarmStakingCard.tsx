@@ -6,8 +6,8 @@ import useI18n from 'hooks/useI18n'
 import { useAllHarvest } from 'hooks/useHarvest'
 import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
-import BlzdHarvestBalance from './BlzdHarvestBalance'
-import BlzdWalletBalance from './BlzdWalletBalance'
+import OliveHarvestBalance from './OliveHarvestBalance'
+import OliveWalletBalance from './OliveWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/olive-oil-bg.svg');
@@ -60,7 +60,7 @@ const FarmedStakingCard = () => {
     }
   }, [onReward])
 
-  const addWatchBlzdToken = useCallback(async () => {
+  const addWatchOliveToken = useCallback(async () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const provider = window.ethereum
@@ -96,17 +96,17 @@ const FarmedStakingCard = () => {
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
         <TokenImageWrapper>
-          <CardImage src="/images/blzd/2.png" alt="OLIVE logo" width={64} height={64} />
-          <Button onClick={addWatchBlzdToken} scale="sm">
+          <CardImage src="/images/olive/2.png" alt="OLIVE logo" width={64} height={64} />
+          <Button onClick={addWatchOliveToken} scale="sm">
             + <img style={{ marginLeft: 8 }} width={16} src="/images/wallet/metamask.png" alt="metamask logo" />
           </Button>
         </TokenImageWrapper>
         <Block>
-          <BlzdHarvestBalance />
+          <OliveHarvestBalance />
           <Label>{TranslateString(544, 'OLIVE to Harvest')}</Label>
         </Block>
         <Block>
-          <BlzdWalletBalance />
+          <OliveWalletBalance />
           <Label>{TranslateString(546, 'OLIVE in Wallet')}</Label>
         </Block>
         <Actions>
