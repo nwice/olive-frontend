@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "cd ../olive-uikit && yarn && yarn build",
     "linkUI": "cd ../olive-uikit && yarn link && cd ../olive-frontend && yarn link \"@olive-libs/uikit\"",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
