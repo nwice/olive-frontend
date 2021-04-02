@@ -37,6 +37,7 @@ export enum PoolCategory {
 
 export interface Address {
   97?: string
+  43114?: string
   56: string
 }
 

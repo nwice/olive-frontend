@@ -1,10 +1,12 @@
 export default {
   cake: {
     56: '0x617724974218A18769020A70162165A539c07E8a',
+    43114: '0x617724974218A18769020A70162165A539c07E8a',
     97: '',
   },
   masterChef: {
     56: '0xD92bc4Afc7775FF052Cdac90352c39Cb6a455900',
+    43114: '0xD92bc4Afc7775FF052Cdac90352c39Cb6a455900',
     97: '',
   },
   wbnb: {
@@ -21,10 +23,12 @@ export default {
   },
   mulltiCall: {
     56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
+    43114: '0xa00FB557AA68d2e98A830642DBbFA534E8512E5f',
     97: '0x67ADCB4dF3931b0C5Da724058ADC2174a9844412',
   },
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    43114: '0xde3A24028580884448a5397872046a019649b084', // USDT avax
     97: '',
   },
 }

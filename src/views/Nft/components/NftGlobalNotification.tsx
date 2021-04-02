@@ -74,7 +74,7 @@ const NftGlobalNotification = () => {
     }
 
     if (account && !document.location.href.includes('/nft')) {
-      checkNftStatus()
+      // checkNftStatus()
     }
   }, [account, showModal])
 
