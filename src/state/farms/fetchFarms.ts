@@ -69,6 +69,7 @@ const fetchFarms = async () => {
             .multipliedBy(new BigNumber(10).pow(18 - quoteTokenDecimals))
         }
         lpTotalInQuoteToken = tokenAmount.times(tokenPriceVsQuote)
+          .dividedBy(new BigNumber(10).pow(18 - tokenDecimals))
       } else {
         // Ratio in % a LP tokens that are in staking, vs the total number in circulation
         const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
