@@ -24,8 +24,8 @@ const Menu = (props) => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       cakePriceUsd={olivePriceUsd.toNumber()}
+      priceLink="https://cchain.explorer.avax.network/address/0x617724974218A18769020A70162165A539c07E8a"
       links={config}
-      priceLink="https://pancakeswap.info/token/0x617724974218A18769020A70162165A539c07E8a"
       {...props}
     />
   )

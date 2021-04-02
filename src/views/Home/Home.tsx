@@ -63,7 +63,7 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xl" mb="24px" color="primary">
           {TranslateString(576, 'Olive.cash')}
         </Heading>
-        <Text>{TranslateString(578, 'The best DEFI app on Binance Smart Chain.')}</Text>
+        <Text>{TranslateString(578, 'The best DEFI app on Avalanche Chain.')}</Text>
       </Hero>
       <div>
         <Cards>

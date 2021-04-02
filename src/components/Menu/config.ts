@@ -22,27 +22,27 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  {
-    label: 'Farms',
-    icon: 'FarmIcon',
-    href: '/farms',
-  },
+  // {
+  //   label: 'Farms',
+  //   icon: 'FarmIcon',
+  //   href: '/farms',
+  // },
   {
     label: 'Pools',
     icon: 'CaveIcon',
     href: '/pools',
   },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x617724974218A18769020A70162165A539c07E8a',
-        external: true,
-      },
-    ],
-  },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'PancakeSwap',
+  //       href: 'https://pancakeswap.info/token/0x617724974218A18769020A70162165A539c07E8a',
+  //       external: true,
+  //     },
+  //   ],
+  // },
   {
     label: 'More',
     icon: 'MoreIcon',
