@@ -6,11 +6,12 @@ export default {
   },
   masterChef: {
     56: '0xD92bc4Afc7775FF052Cdac90352c39Cb6a455900',
-    43114: '0xD92bc4Afc7775FF052Cdac90352c39Cb6a455900',
+    43114: '0xbEfB8d1b214a797dCd29088115C62b2b5380080E',
     97: '',
   },
   wbnb: {
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    43114: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', // AVAX on avalanche
     97: '',
   },
   lottery: {
