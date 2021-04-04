@@ -3,12 +3,29 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
-    pid: 3,
+    pid: 8,
+    lpSymbol: 'OLIVE-AVAX LP',
+    lpAddresses: {
+      97: '',
+      56: '',
+      43114: '0x57cc32Cd7F5a531953E9af25e1C9394093428082',
+    },
+    tokenSymbol: 'OLIVE',
+    tokenAddresses: {
+      97: '',
+      56: '0x617724974218A18769020A70162165A539c07E8a',
+      43114: '0x617724974218A18769020A70162165A539c07E8a',
+    },
+    quoteTokenSymbol: QuoteToken.AVAX,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 9,
     lpSymbol: 'OLIVE-USDT LP',
     lpAddresses: {
       97: '',
       56: '',
-      43114: '0xe79B2190deC1533381059AA06d63ee7e80958e4f',
+      43114: '0xf54a719215622f602fca5bf5a6509734c3574a4c',
     },
     tokenSymbol: 'OLIVE',
     tokenAddresses: {
@@ -19,28 +36,13 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  // {
-  //   pid: 3,
-  //   lpSymbol: 'OLIVE-BNB LP',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x8E9A1C74f8b194933f1B520CE58Eb3405ea68008',
-  //   },
-  //   tokenSymbol: 'OLIVE',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x617724974218A18769020A70162165A539c07E8a',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BNB,
-  //   quoteTokenAdresses: contracts.wbnb,
-  // },
   {
-    pid: 4,
-    lpSymbol: 'AVAX-USDT LP',
+    pid: 10,
+    lpSymbol: 'USDT-AVAX LP',
     lpAddresses: {
       97: '',
       56: '',
-      43114: '0x9EE0a4E21bd333a6bb2ab298194320b8DaA26516',
+      43114: '0xbfc3C72Bab7252341dC90A1E85797Ebd8C79c338',
     },
     tokenSymbol: 'AVAX',
     tokenAddresses: {
@@ -50,6 +52,57 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 11,
+    lpSymbol: 'SUSHI-AVAX LP',
+    lpAddresses: {
+      97: '',
+      56: '',
+      43114: '0xbcD81aAA76D9C1E3aED31c315761c0D9779751B5',
+    },
+    tokenSymbol: 'SUSHI',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      43114: '0x39cf1BD5f15fb22eC3D9Ff86b0727aFc203427cc',
+    },
+    quoteTokenSymbol: QuoteToken.AVAX,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 12,
+    lpSymbol: 'ETH-AVAX LP',
+    lpAddresses: {
+      97: '',
+      56: '',
+      43114: '0x76FbCE48D9dCE3d04bfAc318d1fDeb3a78e903A9',
+    },
+    tokenSymbol: 'ETH',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      43114: '0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15',
+    },
+    quoteTokenSymbol: QuoteToken.AVAX,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 13,
+    lpSymbol: 'WBTC-AVAX LP',
+    lpAddresses: {
+      97: '',
+      56: '',
+      43114: '0x79C1B4Ee613F29a8c0aae563Ef445317D99a6906',
+    },
+    tokenSymbol: 'WBTC',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      43114: '0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB',
+    },
+    quoteTokenSymbol: QuoteToken.AVAX,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   // single pools
@@ -104,7 +157,7 @@ const farms: FarmConfig[] = [
       56: '',
       43114: '0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
   {
@@ -122,7 +175,7 @@ const farms: FarmConfig[] = [
       56: '',
       43114: '0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
   {
@@ -140,7 +193,7 @@ const farms: FarmConfig[] = [
       56: '',
       43114: '0x60781C2586D68229fde47564546784ab3fACA982',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
   {
@@ -158,7 +211,7 @@ const farms: FarmConfig[] = [
       56: '',
       43114: '0x39cf1BD5f15fb22eC3D9Ff86b0727aFc203427cc',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
 ]

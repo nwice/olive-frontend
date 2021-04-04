@@ -68,13 +68,13 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 4 //  BNB-BUSD LP // AVAX-USDT
+  const pid = 10 // AVAX-USDT
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceOliveBusd = (): BigNumber => {
-  const pid = 3 // OLIVE-BUSD LP
+  const pid = 9 // OLIVE-USDT LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
