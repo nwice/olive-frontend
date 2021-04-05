@@ -58,8 +58,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0);
 
-        if (farm.quoteTokenSymbol === QuoteToken.BNB) {
+        if (farm.quoteTokenSymbol === QuoteToken.AVAX) {
           totalValue = totalValue.times(bnbPrice);
+        }
+        if (farm.quoteTokenSymbol === QuoteToken.BUSD) { // USDT on avax 6 decimals
+          totalValue = totalValue.times(new BigNumber(10).pow(12))
         }
 
         if (totalValue.comparedTo(0) > 0) {
