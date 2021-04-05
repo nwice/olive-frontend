@@ -160,24 +160,24 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
-  {
-    pid: 5,
-    isTokenOnly: true,
-    lpSymbol: 'WBTC',
-    lpAddresses: {
-      97: '',
-      56: '',
-      43114: '0x7a6131110B82dAcBb5872C7D352BfE071eA6A17C', // BTC-AVAX LP
-    },
-    tokenSymbol: 'WBTC',
-    tokenAddresses: {
-      97: '',
-      56: '',
-      43114: '0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB',
-    },
-    quoteTokenSymbol: QuoteToken.AVAX,
-    quoteTokenAdresses: contracts.wbnb,
-  },
+  // {
+  //   pid: 5,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'WBTC',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '',
+  //     43114: '0x7a6131110B82dAcBb5872C7D352BfE071eA6A17C', // BTC-AVAX LP
+  //   },
+  //   tokenSymbol: 'WBTC',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '',
+  //     43114: '0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.AVAX,
+  //   quoteTokenAdresses: contracts.wbnb,
+  // },
   {
     pid: 6,
     isTokenOnly: true,
