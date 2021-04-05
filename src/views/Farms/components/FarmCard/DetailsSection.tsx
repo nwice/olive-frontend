@@ -50,7 +50,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
     <Wrapper>
       <Flex justifyContent="space-between">
         <Text>{TranslateString(316, 'Stake')}:</Text>
-        <StyledLinkExternal href={`https://app.pangolin.exchange/#/add/${liquidityUrlPathParts}`}>
+        <StyledLinkExternal href={`https://swap.olive.cash/#/add/${liquidityUrlPathParts}`}>
           {lpLabel}
         </StyledLinkExternal>
       </Flex>
