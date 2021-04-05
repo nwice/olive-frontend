@@ -88,10 +88,12 @@ export const useTotalValue = (): BigNumber => {
     const farm = farms[i]
     if (farm.lpTotalInQuoteToken) {
       let val
-      if (farm.quoteTokenSymbol === QuoteToken.BNB) {
+      if (farm.quoteTokenSymbol === QuoteToken.AVAX) {
         val = bnbPrice.times(farm.lpTotalInQuoteToken)
       } else if (farm.quoteTokenSymbol === QuoteToken.OLIVE) {
         val = olivePrice.times(farm.lpTotalInQuoteToken)
+      } else if (!farm.isTokenOnly && farm.quoteTokenSymbol === QuoteToken.BUSD) { // USDT on avax 6 decimals
+        val = new BigNumber(10).pow(12).times(farm.lpTotalInQuoteToken)
       } else {
         val = farm.lpTotalInQuoteToken
       }

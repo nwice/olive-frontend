@@ -61,7 +61,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         if (farm.quoteTokenSymbol === QuoteToken.AVAX) {
           totalValue = totalValue.times(bnbPrice);
         }
-        if (farm.quoteTokenSymbol === QuoteToken.BUSD) { // USDT on avax 6 decimals
+        if (!farm.isTokenOnly && farm.quoteTokenSymbol === QuoteToken.BUSD) { // USDT on avax 6 decimals
           totalValue = totalValue.times(new BigNumber(10).pow(12))
         }
 
