@@ -33,12 +33,17 @@ const config: MenuEntry[] = [
     href: '/pools',
   },
   {
-    label: 'Info',
+    label: 'Listings',
     icon: 'InfoIcon',
     items: [
       {
         label: 'PancakeSwap',
         href: 'https://pancakeswap.info/token/0x617724974218A18769020A70162165A539c07E8a',
+        external: true,
+      },
+      {
+        label: 'Dex Guru',
+        href: 'https://dex.guru/token/0x617724974218a18769020a70162165a539c07e8a-bsc',
         external: true,
       },
     ],
