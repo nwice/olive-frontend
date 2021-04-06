@@ -32,17 +32,17 @@ const config: MenuEntry[] = [
     icon: 'CaveIcon',
     href: '/pools',
   },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'OliveCash Token',
-        href: 'https://info.pangolin.exchange/#/token/0x617724974218a18769020a70162165a539c07e8a',
-        external: true,
-      },
-    ],
-  },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'OliveCash Token',
+  //       href: 'https://info.pangolin.exchange/#/token/0x617724974218a18769020a70162165a539c07e8a',
+  //       external: true,
+  //     },
+  //   ],
+  // },
   {
     label: 'More',
     icon: 'MoreIcon',
