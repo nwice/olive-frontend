@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import BigNumber from 'bignumber.js'
-import { Button, Flex, Heading, IconButton, AddIcon, MinusIcon, useModal } from '@olive-dev/uikit'
+import { Button, Text, Flex, Heading, IconButton, AddIcon, MinusIcon, useModal } from '@olive-dev/uikit'
 import useI18n from 'hooks/useI18n'
 import useStake from 'hooks/useStake'
 import useUnstake from 'hooks/useUnstake'
@@ -11,6 +11,7 @@ import WithdrawModal from '../WithdrawModal'
 
 interface FarmCardActionsProps {
   stakedBalance?: BigNumber
+  stakedUsd?: BigNumber
   tokenBalance?: BigNumber
   tokenName?: string
   pid?: number
@@ -24,7 +25,7 @@ const IconButtonWrapper = styled.div`
   }
 `
 
-const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, tokenBalance, tokenName, pid, depositFeeBP}) => {
+const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, stakedUsd, tokenBalance, tokenName, pid, depositFeeBP}) => {
   const TranslateString = useI18n()
   const { onStake } = useStake(pid)
   const { onUnstake } = useUnstake(pid)
@@ -33,6 +34,11 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, tokenBalan
   const displayBalance = rawStakedBalance.toLocaleString(undefined, {
     minimumFractionDigits: 2,
     maximumFractionDigits: 8,
+  })
+  const rawStakedUsd = getBalanceNumber(stakedUsd, 0)
+  const displayBalanceUsd = rawStakedUsd.toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
   })
 
   const [onPresentDeposit] = useModal(<DepositModal max={tokenBalance} onConfirm={onStake} tokenName={tokenName} depositFeeBP={depositFeeBP} />)
@@ -56,8 +62,11 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, tokenBalan
   }
 
   return (
-    <Flex justifyContent="space-between" alignItems="center">
-      <Heading color={rawStakedBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
+    <Flex justifyContent='space-between' alignItems='center'>
+      <div>
+        <Heading color={rawStakedBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
+        {rawStakedUsd > 0 ? <Text>${displayBalanceUsd}</Text> : ''}
+      </div>
       {renderStakingButtons()}
     </Flex>
   )

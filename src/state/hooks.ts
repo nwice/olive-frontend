@@ -36,11 +36,23 @@ export const useFarmFromSymbol = (lpSymbol: string): Farm => {
 
 export const useFarmUser = (pid) => {
   const farm = useFarmFromPid(pid)
+  const bnbPrice = usePriceBnbBusd()
+
+  const stakedBalance = farm.userData ? new BigNumber(farm.userData.stakedBalance) : new BigNumber(0)
+
+  const stakedInQuoteToken = stakedBalance.dividedBy(farm.lpTokenBalanceMC).multipliedBy(farm.lpTotalInQuoteToken)
+  let stakedUsd = new BigNumber(0)
+  if (farm.quoteTokenSymbol === QuoteToken.AVAX) {
+    stakedUsd = bnbPrice.times(stakedInQuoteToken)
+  } else if (!farm.isTokenOnly && farm.quoteTokenSymbol === QuoteToken.BUSD) { // USDT on avax 6 decimals
+    stakedUsd = new BigNumber(10).pow(12).times(stakedInQuoteToken)
+  }
 
   return {
     allowance: farm.userData ? new BigNumber(farm.userData.allowance) : new BigNumber(0),
     tokenBalance: farm.userData ? new BigNumber(farm.userData.tokenBalance) : new BigNumber(0),
-    stakedBalance: farm.userData ? new BigNumber(farm.userData.stakedBalance) : new BigNumber(0),
+    stakedBalance,
+    stakedUsd,
     earnings: farm.userData ? new BigNumber(farm.userData.earnings) : new BigNumber(0),
   }
 }
