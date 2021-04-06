@@ -104,6 +104,23 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
+  {
+    pid: 14,
+    lpSymbol: 'PNG-AVAX LP',
+    lpAddresses: {
+      97: '',
+      56: '',
+      43114: '0xaD786Dfe6aC4a68dd3F9a5400DdeE5DedD20d109',
+    },
+    tokenSymbol: 'PNG',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      43114: '0x60781C2586D68229fde47564546784ab3fACA982',
+    },
+    quoteTokenSymbol: QuoteToken.AVAX,
+    quoteTokenAdresses: contracts.wbnb,
+  },
 
   // single pools
   {
