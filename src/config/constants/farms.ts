@@ -177,42 +177,6 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 2,
-    isTokenOnly: true,
-    lpSymbol: 'ETH',
-    lpAddresses: {
-      97: '',
-      56: '',
-      43114: '0x1aCf1583bEBdCA21C8025E172D8E8f2817343d65', // ETH-AVAX LP
-    },
-    tokenSymbol: 'ETH',
-    tokenAddresses: {
-      97: '',
-      56: '',
-      43114: '0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15',
-    },
-    quoteTokenSymbol: QuoteToken.AVAX,
-    quoteTokenAdresses: contracts.wbnb,
-  },
-  // {
-  //   pid: 5,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'WBTC',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '',
-  //     43114: '0x7a6131110B82dAcBb5872C7D352BfE071eA6A17C', // BTC-AVAX LP
-  //   },
-  //   tokenSymbol: 'WBTC',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '',
-  //     43114: '0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.AVAX,
-  //   quoteTokenAdresses: contracts.wbnb,
-  // },
-  {
     pid: 6,
     isTokenOnly: true,
     lpSymbol: 'PNG',
