@@ -121,6 +121,23 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.AVAX,
     quoteTokenAdresses: contracts.wbnb,
   },
+  {
+    pid: 15,
+    lpSymbol: 'DAI-USDT LP',
+    lpAddresses: {
+      97: '',
+      56: '',
+      43114: '0xd3566eC8Cdf8cb4E66B9F958ddb47E225C51E58b',
+    },
+    tokenSymbol: 'DAI',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      43114: '0xba7deebbfc5fa1100fb055a87773e1e99cd3507a',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
 
   // single pools
   {
