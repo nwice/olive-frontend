@@ -54,7 +54,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://olive-cash.medium.com',
+        href: 'https://olive-cash.gitbook.io/olive-cash/',
         external: true,
       },
       {
